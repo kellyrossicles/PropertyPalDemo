@@ -12,11 +12,11 @@ describe('Page loaded successfully', () => {
 
 describe('Search Tests', () => {
     it('Search by My Location', () => {
-        cy.get('.search-ctrl').click()
-          .get('.suggestions-location').click()
-          .get('.suggestions-location').should('not.exist')
+        cy.get('.search-ctrl').should('be.visible').click()
+          .get('.suggestions-location').should('be.visible').click()
+          .get('.suggestions-container').should('be.visible')
           .get('button[data-params=\'{ "st": "sale" }\']').click()
-          .get('.sr-top .pgheader h1').contains("Property For Sale Near My Location")
+          .get('.sr-top .pgheader h1').should('be.visible').contains("Property For Sale Near My Location")
     });
 
     it('Search by BT6', () => {
