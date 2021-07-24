@@ -1,0 +1,19 @@
+{
+  "name": "property_pal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "git": "^0.1.5"
+  },
+  "devDependencies": {
+    "cypress": "^8.0.0"
+  },
+  "chromeWebSecurity": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

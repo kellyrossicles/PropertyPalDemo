@@ -1,0 +1,9 @@
+{
+    "projectId": "65svb9",
+    "env": {
+      "browserPermissions": {
+        "notifications": "allow",
+        "geolocation": "allow"
+      } 
+    }
+  }
