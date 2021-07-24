@@ -14,8 +14,9 @@ describe('Search Tests', () => {
     it('Search by My Location', () => {
         cy.get('.search-ctrl').click()
           .get('.suggestions-location').click()
+          .get('.suggestions-location').should('not.exist')
           .get('button[data-params=\'{ "st": "sale" }\']').click()
-          .get('.pgheader h1').contains("Property For Sale Near My Location")
+          .get('.sr-top .pgheader h1').contains("Property For Sale Near My Location")
     });
 
     it('Search by BT6', () => {
