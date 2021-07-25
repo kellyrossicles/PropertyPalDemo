@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "electron": "^13.1.7",
     "git": "^0.1.5"
   },
   "devDependencies": {
@@ -11,7 +12,8 @@
   },
   "chromeWebSecurity": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run:chrome": "cypress run --browser chrome"
   },
   "keywords": [],
   "author": "",
